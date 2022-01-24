@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["plugin:react/recommended", "next", "prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier", "better-styled-components"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": "off",
+    "no-unused-vars": 1,
+    "camelcase": 0,
+    "react/jsx-key": "off",
+    "@next/next/no-img-element": "off"
+  }
+}
