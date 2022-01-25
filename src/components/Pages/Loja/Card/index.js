@@ -12,9 +12,9 @@ import {
 
 import { Cart } from "@styled-icons/boxicons-regular";
 
-export default function Card() {
+export default function Card(props) {
   return (
-    <Container>
+    <Container {...props}>
       <Offer>5% de Desconto</Offer>
       <Image src="https://1.bp.blogspot.com/-Frhy8mg-PRQ/YQHSAYs3CjI/AAAAAAAAAjY/b3MZBxnIuEEwvyP7qovfAUX0QKVLoCR4gCLcBGAsYHQ/s16000/call-duty-cold-war-capa.jpg" />
       <Title>Call of duty</Title>

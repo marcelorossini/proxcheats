@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import Loja from "./Loja";
+import Loja from "./loja";
 
 export default function Index() {
   return (

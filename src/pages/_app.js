@@ -3,12 +3,12 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const data = {
-    name: "Agência Clinica",
-    title: "Agência Clinica  - Marketing Digital para Profissionais da Saúde",
+    name: "ProxCheats",
+    title: "ProxCheats",
     description:
-      "O marketing tradicional não funciona mais! Somos uma agência 100% focada em estratégias humanizadas, não basta só atrair pacientes, nós te ajudamos a encantá-los.",
-    url: "https://www.agenciaclinica.com.br",
-    image: "https://www.agenciaclinica.com.br/assets/og-20211005.jpg",
+      "",
+    url: "",
+    image: "",
   };
   return (
     <>

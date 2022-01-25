@@ -23,10 +23,35 @@ export const Container = styled.div`
   }
 `;
 
-export const ButtonMenu = styled.button`
-  cursor: pointer;
+export const Logo = styled.div`
+  flex: 1;
+`;
 
+export const Label = styled.div`
+  color: var(--color-text-primary);
+  display: none;
   @media (min-width: 768px) {
-    display: none;
+    display: block;
   }
+`
+
+export const Button = styled.button`
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+
+  ${({ name }) =>
+    name === "menu" &&
+    `
+      @media (min-width: 768px) {
+        display: none;
+      }
+    `}
 `;

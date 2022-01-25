@@ -1,9 +1,10 @@
 import { useRouter } from "next/router";
 
 // Style
-import { Container, ButtonMenu } from "./style";
+import { Container, Button, Logo, Label } from "./style";
 
-import { ArrowBack, Menu, Search } from "@styled-icons/boxicons-regular";
+//
+import { ArrowBack, Menu, Search, User } from "@styled-icons/boxicons-regular";
 
 const Navbar = (props) => {
   const router = useRouter();
@@ -11,13 +12,16 @@ const Navbar = (props) => {
 
   return (
     <Container>
-      <ButtonMenu onClick={() => handleToogleSidebar()}>
+      <Button onClick={() => handleToogleSidebar()} name="menu">
         <Menu />
-      </ButtonMenu>
-      Prox
-      <ButtonMenu onClick={() => handleToogleSidebar()}>
-        <Search />
-      </ButtonMenu>
+      </Button>
+      <Logo onClick={() => router.push('/')}>Prox</Logo>
+      <Button onClick={() => handleToogleSidebar()}>
+        <Search /> <Label>Pesquisa</Label>
+      </Button>
+      <Button>
+        <User /> <Label>Entrar</Label>
+      </Button>
       {/*<ArrowBack onClick={() => router.back()} />*/}
     </Container>
   );

@@ -13,4 +13,9 @@ export const Wrapper = styled.div`
   grid-area: Wrapper;
   padding: 24px 24px;
   overflow-y: scroll;
+  
+  & > * {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 `;
