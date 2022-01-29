@@ -8,13 +8,13 @@ import {
   Input,
   Error,
   GroupInput,
-} from "../../styles/admin/index";
-import { Wrapper, Box, Logo } from "../../styles/admin/login";
+} from "../styles/admin/index";
+import { Wrapper, Box, Logo, Separator } from "../styles/login";
 
-import api from "../../services/api";
-import withAuth from "../../utils/withAuth";
+import api from "../services/api";
+import withAuth from "../utils/withAuth";
 
-import { login } from "../../services/auth";
+import { login } from "../services/auth";
 
 const Login = () => {
   const router = useRouter();
@@ -37,7 +37,7 @@ const Login = () => {
     <Wrapper>
       <Box>
         <Form onSubmit={handleSubmit(onSubmit)}>
-          <Logo src="/assets/logo.svg" alt="logo" />
+          <Logo src="/assets/logo.png" alt="logo" />
           <GroupInput>
             <Input
               height="50px"
@@ -56,7 +56,11 @@ const Login = () => {
               {...register("password")}
             />
           </GroupInput>
-          <Button>Login</Button>
+          <Button>LOGIN</Button>
+          <Separator>
+            Ainda não tem uma conta?
+          </Separator>
+          <Button>CRIAR UMA CONTA</Button>
           <Error>{error}</Error>
         </Form>
       </Box>

@@ -2,7 +2,7 @@ import { createGlobalStyle, keyframes } from "styled-components";
 
 export default createGlobalStyle`
 :root {
-  --color-primary: #00A499;
+  --color-primary: #e74c3c;
   --color-secondary: #1cc2b8;
   --color-tertiary: #2CD5C4;
   --color-text-primary: #ffffff;
@@ -23,6 +23,7 @@ html, body {
   padding: 0;
   height: 100%;  
   background: var(--color-dark);
+  color: #ffffff;
 }
 
 *,

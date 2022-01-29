@@ -25,7 +25,6 @@ export const Error = styled.p`
 `;
 
 export const Button = styled.button`
-  border-radius: 5px;
   box-shadow: 1px 1px 3px #00000010;
   display: flex;
   align-items: center;
@@ -63,7 +62,7 @@ export const Button = styled.button`
     } else {
       css = `  
         color: #ffffff;
-        background: var(--color-primary);
+        background: var(--color-red-mild);
         &:hover {
           background: #00948a;
         }`;
@@ -136,18 +135,19 @@ export const GroupButtons = styled.div`
 export const Input = styled.input`
   width: ${({ width }) => width || "100%"};
   height: ${({ height }) => height || "30px"};
-  font-size: ${({ fontSize }) => fontSize || "14px"};
+  font-size: ${({ fontSize }) => fontSize || "16px"};
   text-align: ${({ textAlign }) => textAlign || "left"};
-  padding: 0 10px;
+  padding: 0 20px;
   border: ${({ alternative }) =>
-    alternative ? "#ffffff" : "1px solid var(--color-primary)"};
+    alternative ? "1px solid var(--color-grey-light)" : "1px solid var(--color-primary)"};
   -webkit-appearance: none;
-  border-radius: 5px;
   outline: none;
   transition: all 0.3s;
+  background: none;
+  color: var(--color-grey-light);
 
   &:not([data-error=""])::placeholder {
-    color: #7f8c8d;
+    color: var(--color-grey-light);
   }
   ${({ secondary }) =>
     secondary &&

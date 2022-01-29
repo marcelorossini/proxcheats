@@ -41,7 +41,7 @@ export const PriceBefore = styled.div`
 
 export const PriceAfter = styled.div`
   font-size: 32px;
-  color: var(--color-red-mild);
+  color: var(--color-primary);
   font-weight: bold;
 `
 
@@ -51,7 +51,7 @@ export const Button = styled.div`
   padding: 10px;
   align-items: center;
   text-align: center;
-  background: var(--color-red-mild);
+  background: var(--color-primary);
   
   & > svg {
     height: 24px;
@@ -59,7 +59,7 @@ export const Button = styled.div`
   `
 export const Offer = styled.div`
   position: absolute;
-  background: var(--color-red-mild);
+  background: var(--color-primary);
   padding: 4px 10px;
   margin: 20px;
 `

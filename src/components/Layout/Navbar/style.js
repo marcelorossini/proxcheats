@@ -27,7 +27,13 @@ export const Logo = styled.div`
   flex: 1;
 `;
 
+export const Image = styled.img`
+  width: 100%;
+  max-width: 256px;
+`;
+
 export const Label = styled.div`
+  font-size: 14px;
   color: var(--color-text-primary);
   display: none;
   @media (min-width: 768px) {
